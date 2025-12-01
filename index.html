@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>DesignLux Interiors — Home</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header class="navbar">
+    <div class="logo">DesignLux Interiors</div>
+
+    <nav>
+      <button class="hamburger">☰</button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home 🏠</a></li>
+        <li><a href="services.html">Services 🛋️</a></li>
+        <li><a href="portfolio.html">Portfolio 🖼️</a></li>
+        <li><a href="pricing.html">Pricing 💰</a></li>
+        <li><a href="about.html">About Us 📞</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HERO SECTION -->
+    <section class="hero" role="banner">
+      <div class="overlay"></div>
+      <div class="hero-content">
+        <h1>Transform Your Home into a Dream ✨</h1>
+        <p>Luxury interior design — modern, cozy, and made for living. Let’s create spaces you love. 💡</p>
+        <div>
+          <button class="cta" onclick="showMessage()">Get Started</button>
+          <button class="sub-cta" onclick="location.href='portfolio.html'">View Portfolio</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- WHAT WE DO SECTION -->
+    <section>
+      <div class="container">
+        <div class="section-title">What We Do 🛠️</div>
+        <p style="margin:12px 0 20px;color:#445">We design interiors for homes, offices, and commercial spaces — blending functionality with high-end style.</p>
+        <div class="grid cards-3">
+
+          <!-- Home Makeovers -->
+          <div class="card">
+            <img src="image2.jpg" alt="Home Makeovers">
+            <div class="card-body">
+              <h3>Home Makeovers</h3>
+              <p>We redesign rooms to reflect your lifestyle and comfort.</p>
+            </div>
+          </div>
+
+          <!-- Custom Furniture -->
+          <div class="card">
+            <img src="image3.jpg" alt="Custom Furniture">
+            <div class="card-body">
+              <h3>Custom Furniture</h3>
+              <p>Handcrafted pieces and decor tailored to your space.</p>
+            </div>
+          </div>
+
+          <!-- Kitchen & Dining -->
+          <div class="card">
+            <img src="image4.jpg" alt="Kitchen & Dining">
+            <div class="card-body">
+              <h3>Kitchen & Dining</h3>
+              <p>Functional kitchens with modern aesthetics.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Floating Login / SignUp -->
+  <button class="fab-login" onclick="openAuth()">Login / Sign Up 🔐</button>
+
+  <!-- Cookie Banner -->
+  <div class="cookie-banner" style="display:none">
+    <p>🍪 Our website uses cookies to improve your experience. By clicking Accept All you agree.</p>
+    <div style="display:flex;gap:10px">
+      <button class="btn" onclick="acceptCookies()">Accept All</button>
+      <button class="btn secondary" onclick="alert('You can still browse — preferences will not be saved in demo.')">Decline</button>
+    </div>
+  </div>
+
+  <footer>
+    <p>© 2025 DesignLux Interiors — Crafted with ❤️</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
